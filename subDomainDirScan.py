@@ -3,7 +3,7 @@
 
 # command example
 # gobuster dir -u "dwvwdv.tk" -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt  -o DirScan/dwv.txt
-# gobuster dir -u "info.taipower.com.tw" -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt  -o DirScan/infotest.txt
+# gobuster dir -u "info.*.com.tw" -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt  -o DirScan/infotest.txt
 # -s -b 黑白名單處理
 
 import re
