@@ -7,7 +7,9 @@ Engine = {
             'DuckDuckGo' : 'http://duckduckgo.com/'
         }
 Search = {
-            'BackStage' : "intext:管理|後台|後臺|登陸|登入|使用者|管理員|用戶|驗證碼|密碼|系統|帳號|Manage|admin|Login|system|adminstor"
+            'BackStage' : "intext:管理|後台|後臺|登陸|登入|使用者|管理員|用戶|驗證碼|密碼|系統|帳號|Manage|admin|Login|system|adminstor",
+            'System' : "intitle:index.of administrators.pwd",
+            'DownloadFile' : "intitle:Index of/"
         }
 
 def SearchItem(target,engine = Engine['Bing'], search = Search['BackStage']):
@@ -25,6 +27,7 @@ def regular(text,engine):
         result = re.findall(pattern,text)
         print(result)
 
-target = 'taipower.com.tw'
-data = SearchItem(target,engine = Engine['Bing'])
+if __name__ == '__main__':
+    target = 'taipower.com.tw'
+    data = SearchItem(target,engine = Engine['Bing'])
 
